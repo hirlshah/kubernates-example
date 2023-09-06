@@ -1,0 +1,171 @@
+.bg-dark-gray {
+    background-color: #262626;
+}
+
+.video-bg {
+    background: linear-gradient(to bottom, #282828 70%, #282828 140px, #323232 141px, #323232 100%);
+    background-repeat: no-repeat;
+}
+nav.navbar.navbar-expand-lg.bg-3c {
+    background-color: #323232;
+}
+.video-bg-img {
+    background-image: url("../../public/images/videocheck-banner.png");
+    height: 387px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.v-main {
+    position: relative;
+    z-index: 1;
+    top: -96px;
+}
+.v-main p {
+    font-size: 23px;
+    font-weight: 500;
+}
+.white-border {
+    width: 120px;
+    height: 120px;
+    border: 3px solid white;
+    border-radius: 50%;
+    padding: 4px;
+    margin: 0 auto;
+}
+.video-sec {
+    padding-bottom: 20px;
+}
+.video-content {
+    position: relative;
+    overflow: hidden;
+}
+.video-content video{
+    filter: blur(24px);
+}
+.video-content.active video {
+    filter: blur(0);
+}
+.overlay {
+    position: absolute;
+    background-color: #000000;
+    opacity: 0.8;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+.video-content.active .overlay {
+    z-index: -1;
+}
+.video-content.active .form-content {
+    z-index: -1;
+}
+.form-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 120px 50px;
+}
+.form-heading {
+    padding-bottom: 64px;
+}
+.form-input input::placeholder{
+    color: #727272;
+}
+.video-btn {
+    opacity: 0.3;
+    pointer-events: none;
+}
+.video-btn.active {
+    opacity: 1;
+    pointer-events: painted;
+}
+.video-btn.active {
+    border: 2px solid $primary;
+    color: $primary;
+}
+.video-btn.active svg path {
+    fill: $primary;
+}
+.video-btn{
+    border: 2px solid #D9D9D9;
+    color: #D9D9D9;
+    border-radius: 20px;
+    background-color: transparent;
+    padding: 15px 27px;
+    font-weight: bold;
+    margin-top: 60px;
+    display: inline-block;
+}
+.video-btn svg path {
+    margin-right: 15px;
+    fill: #D9D9D9;
+}
+
+.white-border img {
+    object-fit: cover;
+}
+ul.iti__country-list li span {
+    color: black;
+}
+.thankyou-bg {
+    background: linear-gradient(to bottom, #262626 100%, #262626 140px, #323232 141px, #323232 100%);
+    background-repeat: no-repeat;
+}
+.thankyou-bg-img {
+    background-image: url("../../public/assets/images/thankyou-banner.png");
+    height: 195px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.thankyou-bg .content {
+    position: relative;
+    z-index: 1;
+    top: -70px;
+}
+.thankyou-bg .content h1 {
+    font-weight: 100;
+    font-size: 60px;
+}
+.thankyou-bg .content h6 {
+    font-weight: 600;
+    font-size: 28px;
+}
+
+@media only screen and (max-width: 991.98px) {
+    .form-content {
+        padding: 50px 30px;
+        top: 0;
+        left: 0;
+        transform: translate(0%, 0%);
+    }
+    .form-input {
+        margin-bottom: 20px;
+    }
+    .form-content {
+        position: relative;
+    }
+    .video-content video {
+        object-fit: cover;
+        position: absolute;
+    }
+    .video-btn {
+        margin-top: 30px;
+    }
+    .video-btn h2 {
+        font-size: 18px;
+    }
+    .video-btn svg {
+        width: 18px;
+    }
+    .video-bg-img {
+        height: 200px;
+    }
+}

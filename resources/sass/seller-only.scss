@@ -1,0 +1,585 @@
+.contact-user-card {
+    display: flex;
+    padding: 5% 7%;
+    border-radius: 10px;
+    margin: 10% 0%;
+    font-weight: bold;
+    box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+}
+
+.contact-delete-direct {
+    display: none;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 12px;
+}
+
+.contact-user-card:hover .contact-delete-direct {
+    display: block;
+}
+
+.profile-page .contact-user-card:hover .contact-delete-direct {
+    display: none;
+}
+
+.contact-user-card-profile {
+    background-color: $primary;
+    color: $white;
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-user-card-add {
+    display: flex;
+    padding: 20% 10%;
+    border-radius: 15px;
+    margin: 10% 0%;
+    font-weight: bold;
+    border: 2px dashed $primary;
+    box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.08);
+    -webkit-box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.08);
+}
+
+.contact-user-card-add:hover {
+    cursor: pointer;
+}
+
+.contact-user-card-profile-add {
+    background-image: url("../../public/assets/images/add-icon.svg");
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50px;
+    object-fit: cover;
+    object-position: center;
+}
+.scroll-hide::-webkit-scrollbar {
+    display: none;
+}
+
+.dummy-scroll-main,
+.drag-drop-scroll-main {
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    scrollbar-color: #ebebeb transparent;
+    scrollbar-width: thin;
+    max-height: 90vh;
+}
+
+.dummy-scroll-main {
+    height: 20px;
+}
+
+.dummy-scrollbar {
+    height: 20px;
+}
+
+.drag-drop-scroll-wrapper {
+    overflow: none;
+}
+
+.drag-drop-scroll {
+    display: flex;
+    /* overflow-x: scroll; */
+    width: max-content;
+    /* height: 20px; */
+
+}
+
+.dummy-scroll-main::-webkit-scrollbar,
+.drag-drop-scroll-main::-webkit-scrollbar {
+    width: 6px;
+    height: 20px;
+}
+
+.dummy-scroll-main::-webkit-scrollbar-track,
+.drag-drop-scroll-main::-webkit-scrollbar-track {
+    background: transparent;
+    height: 20px;
+}
+
+.dummy-scroll-main::-webkit-scrollbar-thumb,
+.drag-drop-scroll-main::-webkit-scrollbar-thumb {
+    background: #ebebeb;
+    border-radius: 10px;
+    height: 20px;
+}
+
+.dummy-scroll-main::-webkit-scrollbar-thumb:hover,
+.drag-drop-scroll-main::-webkit-scrollbar-thumb:hover {
+    background: #c7c7c7;
+    height: 20px;
+}
+
+.drag-drop-card {
+    margin: 0 10px;
+    flex: 0 0 230px;
+}
+
+.drag-drop-card-1 {
+    padding: 0 16px;
+    flex: 0 0 423px;
+}
+
+.portlet-placeholder {
+    border: 1px dotted black;
+    margin: 0 1em 1em 0;
+    height: 20px;
+}
+
+.droppable-contact {
+    position: relative;
+}
+
+
+/*.drag-drop-card .contact-user-card:last-child{
+    margin-bottom: 70px;
+}*/
+
+.modal-data-detail input,
+.modal-data-detail textarea {
+    border-bottom: none !important;
+}
+
+.contact_image_button {
+    border-bottom: 1px solid #666565;
+    cursor: pointer;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+#myDiagramDiv {
+    background-color: rgb(242, 242, 242);
+    width: 100%;
+    height: 700px;
+}
+
+.graph-button-group .btn {
+    padding: 5px;
+}
+
+#add_survey_modal .select2-selection--single {
+    height: 34px !important;
+}
+
+.profile-info-text:disabled {
+    background-color: #fff;
+    opacity: 1;
+    box-shadow: none;
+    border: none;
+}
+
+.profile-info-text:not(disabled) {
+    border: 1px solid #727272;
+}
+
+.info-save-btn {
+    display: none;
+}
+
+.sub-category-nav {
+    display: flex;
+    gap: 2rem;
+}
+
+.sub-category-nav .nav-item .nav-link{
+    color: #D1D1D1;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: transparent;
+    padding-left: 0;
+    padding-right: 0;
+    font-weight: 600;
+    border-radius: 0;
+}
+
+.sub-category-nav .nav-item .nav-link:hover, .sub-category-nav .nav-item .nav-link.active{
+    border-bottom-color: $primary;
+    color: #323232;
+}
+
+@media only screen and (min-width: 768px) {
+    .modal-width-70 .modal-dialog {
+        max-width: 70%;
+    }
+    .drag-drop-card {
+        padding: 0 10px;
+        flex: 0 0 223px;
+    }
+    .drag-drop-card:first-of-type {
+        margin: 0 30px 0 10px;
+    }
+}
+
+.people-list {
+    display: contents;
+}
+
+.category-tags {
+    margin-bottom: 5px;
+}
+
+.contact-status {
+    min-height: 40px;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 40px rgb(0 0 0 / 20%);
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 22px;
+    width: max-content;
+    min-width: 100%;
+    padding: 10px;
+    background-color: #ffffff;
+}
+.contact-status .tooltiptext {
+    right: 0;
+}
+
+#data-table_paginate {
+    float: none;
+    text-align: right;
+}
+
+#data-table_paginate .paginate_button {
+    padding: 15px 25px;
+    font-size: 16px;
+    background: #ffffff;
+    color: #323232 !important;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 13%);
+    border: none;
+    margin: 8px;
+}
+
+#data-table_paginate .paginate_button:hover {
+    background: #B1913C;
+    color: #ffffff !important;
+}
+
+#data-table_paginate .current {
+    background: #B1913C;
+    color: #ffffff !important;
+}
+
+#ajax-member-stats select {
+    background-position: 90% 50%;
+}
+
+#zoom-data-table_length select {
+    text-align: center;
+    background-position: 70% 50%;
+}
+
+.category-delete-button {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    background: $primary;
+    color: white;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* event select dropdown */
+
+.event-selection .select2-container {
+    height: 100%;
+}
+
+.event-selection .select2-container .selection {
+    height: 100%;
+}
+
+.event-selection .select2-container .selection .select2-selection--multiple {
+    height: 100%;
+}
+
+#personalStat {
+    border: 2px solid #ced4da;
+}
+
+/* Task Css */
+.task-board {
+    min-height: 75vh;
+    padding-bottom: 20px;
+}
+
+.task-status {
+    min-height: 40px;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: $primary;
+    box-shadow: 0px 0px 40px rgb(0 0 0 / 10%);
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.task-card {
+    display: flex;
+    padding: 24px;
+    border-radius: 15px;
+    margin: 10% 0%;
+    font-weight: bold;
+    background: #ffffff;
+    box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.08);
+    -webkit-box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.08);
+}
+
+.task-card-add {
+    display: flex;
+    padding: 16px 10%;
+    border-radius: 15px;
+    margin: 10% 0%;
+    font-weight: 500;
+    font-size: 18px;
+    border: 2px dashed $primary;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.08);
+    -webkit-box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.08);
+}
+
+.task-card-add:hover {
+    cursor: pointer;
+}
+
+.task-card-add-img {
+    background-color: $primary;
+    color: $white;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.task-card-add-status {
+    cursor: pointer;
+    display: flex;
+    font-weight: bold;
+    background: #ffffff;
+    color: $primary;
+}
+
+.task-card-add-status-img {
+    width: 35px;
+    height: 35px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50px;
+    margin-left: 15px;
+    background-color: $primary;
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.drag-drop-task-card {
+    padding: 0 10px;
+    flex: 0 0 400px;
+}
+
+.task-delete-direct {
+    display: none;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 12px;
+}
+
+.task-card:hover .task-delete-direct {
+    display: block;
+}
+
+input[type=color] {
+    visibility: hidden;
+}
+
+label.input-color-label {
+    background-color: black;
+    height: 32px;
+    width: 32px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px -1px 9px -1px;
+}
+
+#task_description {
+    display: block;
+    overflow: hidden;
+    resize: none;
+}
+
+#task_delete_confirm, #task_delete_cancel {
+    min-height: 81px;
+}
+
+.label-title .color-label-ball {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.label-item {
+    margin: 2px 0;
+}
+
+.form-check-label input{
+    cursor: pointer;
+}
+
+.edit-label {
+    cursor: pointer;
+}
+
+.task-card .label-title {
+    margin-left: 0;
+    margin-bottom: 10px;
+    border-radius: 50px;
+    width: fit-content;
+    padding: 0 10px;
+}
+
+.task-card .label-title .color-label-ball {
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.task-card .label-title span {
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.collapse-contacts-btn {
+    padding: 10px 30px;
+    margin-bottom: 20px;
+}
+.contact-label {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-label .label-title {
+    border-radius: 12px;
+    width: fit-content;
+    padding: 4px 10px;
+    margin: 0 5px 5px 0;
+    line-height: 1;
+    display: inline-block;
+    color: #fff;
+    font-weight: 500;
+}
+
+/* .contact-label .label-title:last-of-type {
+    margin-bottom: 10px;
+} */
+
+.contact-label .label-title .color-label-ball {
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.contact-label .label-title span {
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.tooltiptext.red {
+    background-color: red;
+}
+
+.status .tooltiptext {
+   z-index: 999;
+}
+
+.tooltiptext.red span {
+    color: #FFFFFF;
+}
+
+.tooltip-down {
+    text-decoration: underline  ;
+}
+
+#video-ajax-list .sub-category-nav .nav-item .modal-popup-delete-sub-category i{
+    position: absolute;
+    top: -2px;
+    right: -17px;
+    background-color: $primary;
+    padding: 5px;
+    border-radius: 50%;
+    color: white;
+    font-size: 14px;
+}
+#video-ajax-list .sub-category-nav .nav-item .nav-link{
+    padding: 15px 25px !important;
+}
+
+#document-ajax-list .sub-category-nav .nav-item .modal-popup-delete-sub-category i{
+    position: absolute;
+    top: -2px;
+    right: -17px;
+    background-color: $primary;
+    padding: 5px;
+    border-radius: 50%;
+    color: white;
+    font-size: 14px;
+}
+#document-ajax-list .sub-category-nav .nav-item .nav-link{
+    padding: 15px 25px !important;
+}
+
+.analytics-user-card-profile-add {
+    background-image: url("../../public/assets/images/add-icon.svg");
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50px;
+    object-fit: cover;
+    object-position: center;
+}
