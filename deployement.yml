@@ -7,11 +7,11 @@ metadata:
     tier: backend
     app: rankup
 data:
-  DB_HOST: YXBwbGljYXRpb24uY3Z4d3F0ZnBiZzUxLnVzLWVhc3QtMS5yZHMuYW1hem9uYXdzLmNvbQ==
-  DB_PORT: MzMwNgo=
-  DB_NAME: cmFua3VwCg==
-  DB_USERNAME: cmFua3VwLWRi
-  DB_PASSWORD: cmFua3VwLWRhYjEyMw==
+  DB_HOST: $DB_HOST
+  DB_PORT: $DB_PORT
+  DB_NAME: $DB_NAME
+  DB_USERNAME: $DB_USERNAME
+  DB_PASSWORD: $DB_PASSWORD
 ---
 apiVersion: v1
 kind: ConfigMap
@@ -24,9 +24,9 @@ metadata:
 data:
   APP_NAME: "RankUp"
   APP_ENV: "rank-up"
-  APP_KEY: "base64:/4RatQQ1cVmMcE12c6db8dZEOABLHuPClZK+ixsRV7w="
+  APP_KEY: $APP_KEY
   # ... other environment variables
-  GOOGLE_URL: "780579061006-j92nrap45a1d42a9pp1ehnoonulrjidm.apps.googleusercontent.com"
+  GOOGLE_URL: $GOOGLE_URL
 ---
 apiVersion: v1
 kind: Service
